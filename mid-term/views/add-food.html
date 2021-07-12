@@ -1,0 +1,56 @@
+<%- include('partials/header'); -%>
+    <main>
+    <h2>Add new food to the database:</h2>
+    <p>Amount/100g</p>
+        <form method="POST" action="/topic7/mid-term/foodadded">
+            <table class="addnew">
+                <tr>
+                    <td colspan="2"> 
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="calories">Calories:</label><p>max. 4 digit, 1 decimal</p>
+                        <input type="number" step="0.01" id="calories" name="calories">
+                    </td>
+                    <td>
+                        <label for="carbs">Carbs:</label><p>max. 4 digit, 1 decimal</p>
+                        <input type="number" step="0.01" id="carbs" name="carbs">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="protein">Fat:</label><p>max. 4 digit, 1 decimal</p>
+                        <input type="number" step="0.01" id="fat" name="fat">
+                    </td> 
+
+                    <td>
+                        <label for="protein">Protein:</label><p>max. 4 digit, 1 decimal</p>
+                        <input type="number" step="0.01" id="protein" name="protein">
+                    </td> 
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="salt">Salt:</label><p>max. 2 digit, 4 decimal</p>
+                        <input type="number" step="0.0001" id="salt" name="salt">
+                    </td>
+
+                    <td>
+                        <label for="sugar">Sugar:</label><p>max. 4 digit, 1 decimal</p>
+                        <input type="number" step="0.01" id="sugar" name="sugar">
+                    </td>
+                </tr>
+            </table>
+
+            <input type="submit">
+        </form>
+    </main>
+    <footer>
+    </footer>
+</div>
+</body>
+</html>

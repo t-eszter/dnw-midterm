@@ -1,0 +1,34 @@
+<%- include('partials/header'); -%>
+<main>
+    <h2>Update food in the database:</h2>
+    <form action="/update-result-db" method="GET">
+      <input id="search-box" onfocus="this.value=''" type="text" name="keyword" value="Search food...">
+      <input type="submit" value="Submit" >
+    </form>
+    <table>
+        <tr>
+          <th>Name</th>
+          <th>Calories</th>
+          <th>Carbs</th>
+          <th>Fat</th>
+          <th>Protein</th>
+          <th>Salt</th>
+          <th>Sugar</th>
+        </tr>
+        <% availableFoods.forEach(function(food){ %> 
+          <tr>
+            <td><%= food.name %></td>
+            <td><%= food.calories %> kcal</td>
+            <td><%= food.carbs %> g</td>
+            <td><%= food.fat %> g</td>
+            <td><%= food.protein %> g</td>
+            <td><%= food.salt %> g</td>
+            <td><%= food.sugar %> g</td>
+            <td><a href="/topic7/mid-term/edit-food/<%= food.id %>" >Edit</a></td>>
+          </tr>
+        <% }) %>
+    </table>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+body {
+  font-family: 'Yusei Magic', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dedede;
+  flex-direction: column;
+}
+
+main {
+  padding: 0px 60px;
+}
+
+#content {
+  width:60%;
+  height:80%;
+  background: #fff;
+}
+
+form {
+  margin: 0 auto;
+  display: table;
+}
+
+h2 {
+  padding: 20px 0 0 0;
+  display: inline-block;
+  margin: 0;
+}
+
+form p {
+  font-size: 12px;
+  color:#333;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline-block;
+}
+
+button, input[type=submit] {
+      box-shadow:inset 0px 1px 0px 0px #fbafe3;
+      background:linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+      background-color:#ff5bb0;
+      border-radius:6px;
+      border:1px solid #ee1eb5;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-size:15px;
+      font-weight:bold;
+      padding:10px 24px;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #c70067;
+}
+
+input[type=submit] {
+  margin-bottom: 40px;
+}
+
+button:hover, input[type=submit]:hover {
+      background:linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+      background-color:#ef027d;
+  }
+
+button:active, input[type=submit]:active {
+      position:relative;
+      top:1px;
+}
+
+input[type=number] {
+  width: 60px;
+}
+
+#logo {
+  padding: 30px 0;
+}
+
+table, .foodlist table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.foodlist tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+input, label {
+  display: block;
+  width: 97%;
+}
+
+nav ul {
+list-style: none;
+text-align: center;
+}
+nav ul li {
+display: inline-block;
+}
+nav ul li a {
+display: block;
+padding: 15px;
+text-decoration: none;
+color: #000;
+font-weight: 800;
+text-transform: uppercase;
+margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+transition: all .3s;
+}
+nav ul li a:hover, .selected {
+color: #820154;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ededed;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+margin: auto;
+width: 0%;
+content: '.';
+color: transparent;
+background: #333;
+height: 2px;
+}
+nav.stroke ul li a:hover:after {
+width: 100%;
+}
+
+nav.fill ul li a {
+transition: all 2s;
+}
+/* By Dominik Biedebach @domobch */
+
+.about {
+  margin-bottom: 40px;
+}
+
+#search-box {
+  height: 44px;
+  margin-top: 20px;
+}
+
+form#search {
+  width: 80%;
+  height: 300px;
+}
+
+#search input {
+  width: 100%;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+input[type="text" i] {
+  padding: 0;
+}
+
+form input::placeholder {
+  padding: 10px;
+}
+
+form input[type="text"] {
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.searchHeader {
+  padding-top: 60px;
+}
+
+#food-list button {
+  float: right;
+  margin: 22px 0px;
+}
+
+.update-food input[type="text"] {
+  margin-bottom: 20px;
+}
